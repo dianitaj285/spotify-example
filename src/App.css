@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body{
+font-size: large;
+font-weight: bold;
+background-color: rgb(192, 194, 241);
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header{
+  background-color:#4E148C;
   color: white;
+  margin-top: 0;
+  text-align: center;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.input{
+  border:none;
+  border-bottom: solid 2px #4E148C;
+  font-size: large;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="text"], textarea {
+
+  background-color : rgb(192, 194, 241); 
+
+}
+
+.button{
+background-color: #4E148C;
+color: white;
+font-weight: bold;
+border-radius: 4px;
+margin: 3px;
+outline: none;
+}
+
+.button:hover{
+  background-color: #613DC1;
+}
+.artistButton{
+  background-color: rgb(192, 194, 241);
+  color: #4E148C;
+  border-color:#4E148C ;
+  font-weight: bold;
+  border-radius: 2px;
+  margin: 3px;
+  font-size: small;
+  outline: none;
+  width: 200px;
+}
+.artistButton:hover{
+  background-color: #858AE3;
+
+}
+.artists{
+  display:flex;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+.label{
+  padding: 5px;
+  background: rgb(151,223,252);
+  background: linear-gradient(65deg, rgba(151,223,252,1) 33%, rgba(192,194,241,1) 91%);
+}
+
+.songs{
+  background-color: #2C0735;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.title{
+  background: rgb(151,223,252);
+  background: linear-gradient(65deg, rgba(151,223,252,1) 33%, rgba(44,7,53,1) 100%);;
+  color: black;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 4px;
 }
